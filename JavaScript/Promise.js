@@ -7,4 +7,3 @@
 // let p2 = Promise.reject('2')
 
 // Promise.all([p1, p2]).then(console.log, console.log)
-
