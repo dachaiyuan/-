@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .u>li:nth-child(2n) {
+            color: green;
+        }
+
+        .u>li:nth-child(2n+1) {
+            color: orange;
+        }
+
+        .u>li[data-end] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="u">
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+        <li>789</li>
+        <li>789</li>
+        <li>789</li>
+        <li>789</li>
+        <li>789</li>
+        <li>789</li>
+        <li>789</li>
+        <li data-end="1">33</li>
+    </ul>
+</body>
+
+</html>

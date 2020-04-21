@@ -53,7 +53,6 @@ function ajax(config) {
 //     }
 // })
 
-
 function ajaxPromise(params) {
     return new Promise((resolve, reject) => {
         ajax({
