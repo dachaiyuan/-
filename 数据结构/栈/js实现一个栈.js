@@ -22,7 +22,7 @@ function Stack() {
             top = top.next;
             delete currentNode.next;
             length--;
-            return currentNode;
+            return currentNode.node;
         } else {
             return 'stack is null'
         }
@@ -48,18 +48,25 @@ function Stack() {
         }
         return str;
     }
-}
 
-let stack = new Stack();
-stack.push(2)
-stack.push(8)
-stack.push(4)
-stack.push(3)
-console.log(stack.toString())
-console.log(stack.top())
-console.log(stack.size())
-stack.pop()
-stack.pop()
+    // 栈空
+    this.empty = function () {
+        return !length;
+    }
+}
+module.exports = Stack;
+// exports.modules = Stack;
+
+// let stack = new Stack();
+// stack.push(2)
+// stack.push(8)
+// stack.push(4)
+// stack.push(3)
+// console.log(stack.toString())
+// console.log(stack.top())
+// console.log(stack.size())
 // stack.pop()
-console.log(stack.pop())
-console.log(stack.toString())
+// stack.pop()
+// // stack.pop()
+// console.log(stack.pop())
+// console.log(stack.toString())

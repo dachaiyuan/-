@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .u>li:nth-child(2n) {
-            color: green;
+    <style type="text/css">
+        #a {
+            font-size:12px;
         }
-
-        .u>li:nth-child(2n+1) {
-            color: orange;
+        div p{ 
+            font-size:13px;
         }
-
-        .u>li[data-end] {
-            color: red;
+        .a .b .c{ 
+            font-size:15px;
+        }
+        div .b .c{ 
+            font-size:14px;
+        }
+        #b{ 
+            font-size:16px;
         }
     </style>
+    
 </head>
 
 <body>
-    <ul class="u">
-        <li>123</li>
-        <li>456</li>
-        <li>789</li>
-        <li>789</li>
-        <li>789</li>
-        <li>789</li>
-        <li>789</li>
-        <li>789</li>
-        <li>789</li>
-        <li>789</li>
-        <li data-end="1">33</li>
-    </ul>
+    <div id='a' class="a">
+        <div id="b" class="b">
+            <p id="c" class="c" >I’am here</p>
+        </div>
+    </div>
 </body>
 
 </html>
