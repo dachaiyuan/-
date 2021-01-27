@@ -13,8 +13,10 @@ function X(){
 }
 
 function Y(){
-    X.call(this,arguments);
-    this.__proto__ = X;
+    // X.call(this);
+    // this.__proto__.__proto__ = X;
 }
+Y.__proto__ = X;
+Y.prototype.__proto__ = X.prototype;
 
 console.log(new Y())
